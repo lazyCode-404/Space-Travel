@@ -11,8 +11,8 @@ const initialState = {
   loading: false,
   error: null,
 };
-  // Reducer
-export default function missonsReducer(state = initialState, action = {}) {
+// Reducer
+export default function missionsReducer(state = initialState, action = {}) {
   const { value } = action;
   switch (action.type) {
     case START:
