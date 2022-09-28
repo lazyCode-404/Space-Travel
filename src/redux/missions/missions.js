@@ -11,7 +11,7 @@ const initialState = {
   loading: false,
   error: null,
 };
-// Reducer
+  // Reducer
 export default function missionsReducer(state = initialState, action = {}) {
   const { value } = action;
   switch (action.type) {
