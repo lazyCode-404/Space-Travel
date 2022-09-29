@@ -5,7 +5,7 @@ import Nav from './components/Nav';
 import Missions from './components/pages/Missions';
 import Dragons from './components/pages/Dragons';
 import Profile from './components/pages/Profile';
-import Rockect from './components/pages/Rocket';
+import Rockect from './components/pages/Rockect';
 
 function App() {
   return (
