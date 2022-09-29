@@ -39,7 +39,7 @@ const Nav = () => (
           <NavLink
             to={link.path}
             style={({ isActive }) => ({
-              textDecoration: isActive ? 'underline' : null,
+              textDecoration: isActive ? 'underline' : 'none',
             })}
           >
             {link.text}
