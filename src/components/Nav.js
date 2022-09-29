@@ -16,11 +16,6 @@ const links = [
   },
   {
     id: 3,
-    path: '/dragons',
-    text: 'Dragons',
-  },
-  {
-    id: 4,
     path: '/Profile',
     text: 'My profile',
   },
@@ -39,7 +34,7 @@ const Nav = () => (
           <NavLink
             to={link.path}
             style={({ isActive }) => ({
-              textDecoration: isActive ? 'underline' : null,
+              textDecoration: isActive ? 'underline' : 'none',
             })}
           >
             {link.text}
