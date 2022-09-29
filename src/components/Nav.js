@@ -16,11 +16,6 @@ const links = [
   },
   {
     id: 3,
-    path: '/dragons',
-    text: 'Dragons',
-  },
-  {
-    id: 4,
     path: '/Profile',
     text: 'My profile',
   },
