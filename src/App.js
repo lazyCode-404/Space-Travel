@@ -1,11 +1,19 @@
 import './App.css';
+import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { fetchDragons } from './redux/dragons/dragons';
+
 import Nav from './components/Nav';
 import Missions from './components/pages/Missions';
-import Dragons from './components/pages/Dragons';
+import Dragons from './components/pages/dragons/Dragons';
 import Profile from './components/pages/Profile';
 
-function App() {
+export default function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchDragons());
+  }, []);
   return (
     <div className="App">
       <Nav />
@@ -17,5 +25,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
