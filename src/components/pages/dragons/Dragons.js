@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchDragons, reserve, cancelReservation } from '../redux/dragons/dragons.';
+import { fetchDragons, reserve, cancelReservation } from '../../../redux/dragons/dragons';
 import styles from './styles/dragons.module.css';
 
 export default function Dragons() {
