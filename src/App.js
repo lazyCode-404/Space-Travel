@@ -1,22 +1,22 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route } from 'react-router-dom';
-import Nav from './components/Nav';
-import Missions from './components/pages/Missions';
-import Dragons from './components/pages/Dragons';
-import Profile from './components/pages/Profile';
+import React from 'react';
+import { Route, Routes, Navigate } from 'react-router-dom';
+import Header from './Components/Header';
+import RocketPage from './pages/RocketPage';
+import Missions from './pages/MissionPage';
+import MyProfile from './Components/MyProfile';
+import Dragons from './pages/dragonPage';
 
-function App() {
-  return (
-    <div className="App">
-      <Nav />
-      <Routes>
-        <Route path="/missions" element={<Missions />} />
-        <Route path="/dragons" element={<Dragons />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
-    </div>
-  );
-}
+export const App = () => (
+  <>
+    <Header />
+    <Routes>
+      <Route exact path="/" element={<Navigate to="/Rockets" />} />
+      <Route exact path="/Rockets" element={<RocketPage />} />
+      <Route exact path="/Dragons" element={<Dragons />} />
+      <Route exact path="/Missions" element={<Missions />} />
+      <Route exact path="/MyProfile" element={<MyProfile />} />
+    </Routes>
+  </>
+);
 
 export default App;

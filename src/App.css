@@ -1,39 +1,190 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 1% 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+header div {
+  width: 40%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+
+nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  height: 52px;
+}
+
+.myProfileContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.myRockets,
+.myMissions,
+.myDragons {
+  width: 30%;
+  height: 300px;
+  border: solid black 2px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border-radius: 5px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  border: solid gray 1px;
+  border-radius: 3px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.Container img {
+  max-width: 185px;
+}
+
+.Container {
+  display: flex;
+  gap: 1%;
+  margin-bottom: 30px;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.badge {
+  margin-right: 7px;
+  background-color: #4698a1;
+  color: white;
+  padding: 1px 4px;
+}
+
+.Line {
+  height: 0;
+  border: solid 1px #e8e8e8;
+  margin-bottom: 30px;
+}
+
+.joinBtn {
+  background-color: #ff0241;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.joinBtn:active {
+  background-color: #e8003a;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.joinBtn:hover {
+  background-color: #ff1c1c;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.cancelBtn {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.cancelBtn:hover {
+  background-color: #f7fafa;
+}
+
+.cancelBtn:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  outline: 0;
+}
+
+table {
+  background-color: #0f1111;
+}
+
+tr {
+  background-color: white;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(243, 230, 230);
+}
+
+.status1 {
+  font-size: 14px;
+  background-color: #999;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+
+.status2 {
+  font-size: 14px;
+  background-color: royalblue;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
 }
