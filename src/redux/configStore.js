@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import missionsReducer from './Missions/missions';
+import missionsReducer from './missions/missions';
 import dragonReducer from './dragons/dragons';
 import rocketsReducer from './Rockets/Rockets';
 

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
-import { fetchRockets, ChangeStatus } from '../Redux/Rockets/Rockets';
+import { fetchRockets, ChangeStatus } from '../redux/Rockets/Rockets';
 
 const Rocket = ({ rocket }) => {
   const dispatch = useDispatch();

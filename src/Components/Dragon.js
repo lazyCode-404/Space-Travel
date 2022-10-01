@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { CHANGE_STATUE } from '../Redux/dragons/dragons';
+import { CHANGE_STATUE } from '../redux/dragons/dragons';
 
 const Dragon = ({ dragon }) => {
   const dispatch = useDispatch();

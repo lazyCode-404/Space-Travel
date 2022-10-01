@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import { React, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchMissions } from '../Redux/Missions/missions';
+import { fetchMissions } from '../redux/missions/missions';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missionsReducer);
