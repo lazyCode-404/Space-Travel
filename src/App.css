@@ -98,7 +98,7 @@ header img {
 }
 
 .joinBtn {
-  background-color: #0276ff;
+  background-color: #ff0241;
   border: 1px solid #d5d9d9;
   border-radius: 8px;
   box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
@@ -120,11 +120,11 @@ header img {
 }
 
 .joinBtn:active {
-  background-color: #006ae8;
+  background-color: #e8003a;
 }
 
 .joinBtn:hover {
-  background-color: #1c84ff;
+  background-color: #ff1c1c;
 }
 
 .cancelBtn {
