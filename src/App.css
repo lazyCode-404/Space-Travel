@@ -127,10 +127,6 @@ header img {
   background-color: #9c0022;
 }
 
-.joinBtn:hover {
-  background-color: #1c84ff;
-}
-
 .cancelBtn {
   background-color: #fff;
   border: 1px solid #d5d9d9;
