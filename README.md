@@ -1,8 +1,7 @@
 # Space Traveler's Hub
 - This web application provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.
 
-### 📜 a web site that has all information about space staion Rokets Missions and Dragons .
- 
+### 📜 a web site that has all information about space staion Rokets Missions and Dragons. 
 
 ## 🏛 Built With
 - css
