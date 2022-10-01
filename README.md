@@ -24,7 +24,7 @@
 
 👤 **Bakhtiyor**
 - [GitHub](https://github.com/username-forGithub)
-- [Twitter]([@Bakhtiyor_dev](https://twitter.com/Bakhtiyor_dev))
+- [Twitter]([#](https://twitter.com/Bakhtiyor_dev))
 
 ## ⚙ Getting Started
 To get a local copy up and running... 
