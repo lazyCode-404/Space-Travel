@@ -120,15 +120,15 @@ header img {
 }
 
 .joinBtn:active {
-  background-color: #e8003a;
+  background-color: #b9002e;
 }
 
 .joinBtn:hover {
-  background-color: #ff1c1c;
+  background-color: #9c0022;
 }
 
 .cancelBtn {
-  background-color: #fff;
+  background-color: rgb(122, 175, 255);
   border: 1px solid #d5d9d9;
   border-radius: 8px;
   box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
@@ -150,11 +150,11 @@ header img {
 }
 
 .cancelBtn:hover {
-  background-color: #f7fafa;
+  background-color: #0361cc;
 }
 
 .cancelBtn:focus {
-  border-color: #008296;
+  border-color: #002079;
   box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
   outline: 0;
 }
