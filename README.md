@@ -33,7 +33,7 @@ Follow these
   ## 📋Setup
 - Run git clone on this project at the desired directory:
 
-  git clone https: CLONE URL (You can get the URL from: [(https://github.com/lazyCode-404/Space-Travel/tree)](https://github.com/lazyCode-404/Space-Travel/tree/development) Click on the code button at the top of the repo (it has green color) then select the HTTPS or ssh key and copy the URL)
+  git clone https: CLONE URL (You can get the URL from: [(https://github.com/lazyCode-404/Space-Travel)](https://github.com/lazyCode-404/Space-Travel/tree/development) Click on the code button at the top of the repo (it has green color) then select the HTTPS or ssh key and copy the URL)
   ```
   cd Space-Travel
   ```
