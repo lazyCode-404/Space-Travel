@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test my profile Button component render 1`] = `
+<div
+  className="myProfileContainer"
+>
+  <div
+    className="myMissions"
+  >
+    <h1>
+      My Missions
+    </h1>
+    <p>
+      You have no missions
+    </p>
+  </div>
+  <div
+    className="myRockets"
+  >
+    <h1>
+      My Rockets
+    </h1>
+    <p>
+      No rockets reserved
+    </p>
+  </div>
+  <div
+    className="myDragons"
+  >
+    <h1>
+      My Dragons
+    </h1>
+    <p>
+      You have no dragons reserved
+    </p>
+  </div>
+</div>
+`;

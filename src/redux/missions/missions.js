@@ -1,57 +1,36 @@
-// Actions
-const START = 'space-ship/missions/START_LOADING_MISSIONS';
-const LOAD = 'space-ship/missions/LOAD_MISSIONS';
-const ADD_REMOVE_MEMBER = 'space-ship/missions/ADDREMOVE_MEMBER';
+import axios from 'axios';
 
-const initialState = {
-  missions: [],
-  loading: true,
-  error: null,
+const missinsAPI = 'https://api.spacexdata.com/v3/missions';
+const FETCH_MISSIONS = 'FETCH_MISSIONS';
+const initialState = [];
+
+export const fetchMissions = () => async (dispatch) => {
+  const response = await axios.get(missinsAPI);
+  return dispatch({
+    type: FETCH_MISSIONS,
+    payload: response.data,
+  });
 };
-  // Reducer
-export default function missionsReducer(state = initialState, action = {}) {
-  const { value } = action;
-  switch (action.type) {
-    case START:
-      return {
-        ...state,
-        loading: true,
-        error: null,
-      };
-    case LOAD:
-      return {
-        ...state,
-        loading: false,
-        error: value.error,
-        missions: value,
-      };
-    case ADD_REMOVE_MEMBER:
-      return {
-        ...state,
-        loading: false,
-        error: value.error,
-        missions: state.missions.map((mission) => {
-          const prevValue = mission.isMember;
-          if (mission.mission_id !== value) return mission;
-          return { ...mission, isMember: !prevValue };
-        }),
-      };
 
+const missionsReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case FETCH_MISSIONS:
+      return action.payload.map((mission) => (
+        {
+          mission_id: mission.mission_id,
+          mission_name: mission.mission_name,
+          description: mission.description,
+          active: false,
+        }));
+    case 'change':
+      return state.map((mission) => {
+        if (mission.mission_id === action.id) {
+          return { ...mission, active: !mission.active };
+        }
+        return mission;
+      });
     default:
       return state;
   }
-}
-
-// Action Creators
-
-export function startLoadingMessions(result) {
-  return { type: START, value: result };
-}
-
-export function LoadMessions(result) {
-  return { type: LOAD, value: result };
-}
-
-export function addremoveMembertoMission(result) {
-  return { type: ADD_REMOVE_MEMBER, value: result };
-}
+};
+export default missionsReducer;
